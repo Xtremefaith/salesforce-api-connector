@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Salesforce API Connector for WordPress : A WordPress plugin that connects your SalesForce organization to you site, enabling developers to make REST API calls">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Salesforce API Connector for WordPress</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Xtremefaith/Salesforce-API-Connector">View on GitHub</a>
+
+          <h1 id="project_title">Salesforce API Connector for WordPress</h1>
+          <h2 id="project_tagline">A WordPress plugin that connects your SalesForce organization to you site, enabling developers to make REST API calls</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Xtremefaith/Salesforce-API-Connector/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Xtremefaith/Salesforce-API-Connector/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="a-work-in-progress" class="anchor" href="#a-work-in-progress" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Work In Progress</h1>
+
+<p>At the moment this project is only a concept we are working hard to make it a reality as quickly as possible. WordPress has an amazing community of developers who constantly contribute towards the direction of its tools and functionality. Now we're putting the <a href="http://www.salesforce.com/">Salesforce</a> community to that same test. </p>
+
+<p>With the community's help, <strong>the goal is create a simple WordPress plugin that connects the WordPress site/application to a Salesforce organization/environment.</strong> This will enable developers to easily create SOAP/REST API calls to their org using a <a href="https://www.salesforce.com/us/developer/docs/api_rest/Content/intro_understanding_username_password_oauth_flow.htm">Username-Password Flow</a></p>
+
+<h3>
+<a id="for-example" class="anchor" href="#for-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>For Example:</h3>
+
+<ul>
+<li>
+<strong>Customer Portal</strong> - If you ever wanted to create a custom customer portal solution this would be foundational to doing just that</li>
+<li>
+<strong>Reports</strong> - Perhaps you wanted a live piece of data to display in a widget, post, or page, with this API connector you could easily make a request to a reporting class in your organization and make it happen</li>
+<li>
+<strong>Directory</strong> - Wanting a simple way to manage your organizations staff on your WordPress site? With a quick API call to a custom APEX class you can now export a custom SOQL result to your WordPress environment and display it on a page</li>
+</ul>
+
+<h3>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h3>
+
+<ul>
+<li>
+<strong>OAuth 2.0 Integration</strong> - I want to be able to click "Login with Salesforce!" through the WordPress admin and be authenticate and API user's credentials to any organization</li>
+<li>
+<strong>REST/SOAP Request</strong> - I want to handle REST/SOAP API request</li>
+<li>
+<strong>Error Handling</strong> - This plugin should handle any errors from API request, (i.e. <code>ERROR: function is not available on this org</code> when a request to your organization doesn't exist in a class )</li>
+<li>
+<strong>Flexibility</strong> - This plugin will serve as a foundation to many in-house projects so its purpose is to be simple, well-documented, and mostly invisible to the development process</li>
+</ul>
+
+<h1>
+<a id="help-wanted" class="anchor" href="#help-wanted" aria-hidden="true"><span class="octicon octicon-link"></span></a>Help Wanted</h1>
+
+<p>Are you excited about this project?! I am and I believe it could benefit many people and organizations as it combines two extremely large platforms in a powerful way. I would really appreciate any help you are willing to contribute: <strong>advice, code, direction, etc</strong> <em>-Please message me directly letting me know your interest, every little bit helps</em> More details about the mission and progress, including screenshots and whiteboard outlines can be found on <a href="http://xtremefaith.github.io/Salesforce-API-Connector/">the documentation page</a></p>
+
+<h2>
+<a id="current-to-do-list" class="anchor" href="#current-to-do-list" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current To Do List</h2>
+
+<ul>
+<li>
+<a href="http://salesforce.stackexchange.com/questions/56752/how-to-create-a-managed-application-and-namespace-for-rest-api">Create a managed package</a> - Anyone can respond to this public form to help progress this</li>
+<li>Create a request for a <code>request_token</code>
+</li>
+<li>Use <code>request_token</code> to get an <code>access_token</code>
+</li>
+<li>Use access token to make an API call to Salesforce</li>
+<li>Securely store credentials in WordPress database</li>
+<li>Setup OAuth 2.0 as new process for getting <code>access_token</code>
+</li>
+</ul>
+
+<h2>
+<a id="whiteboard" class="anchor" href="#whiteboard" aria-hidden="true"><span class="octicon octicon-link"></span></a>Whiteboard</h2>
+
+<p>Here's a few whiteboard illustrations that will help establish a visual on where we are at and where we are going.</p>
+
+<h4>
+<a id="oauth-process" class="anchor" href="#oauth-process" aria-hidden="true"><span class="octicon octicon-link"></span></a>OAuth Process</h4>
+
+<p><img src="https://raw.githubusercontent.com/Xtremefaith/Salesforce-API-Connector/master/documentation/whiteboards/oauth-process.jpg" alt="OAuth Process"></p>
+
+<h2>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h2>
+
+<p>Nick Worth (<a href="https://github.com/Xtremefaith" class="user-mention">@Xtremefaith</a>) - Lead Developer</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Salesforce API Connector for WordPress maintained by <a href="https://github.com/Xtremefaith">Xtremefaith</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-33251872-4");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
