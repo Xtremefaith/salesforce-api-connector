@@ -25,7 +25,7 @@ With the community's help, **the goal is create a simple WordPress plugin that c
 
 # Help Wanted
 
-Are you excited about this project?! I am and I believe it could benefit many people and organizations as it combines two extremely large platforms in a powerful way. I would really appreciate any help you are willing to contribute: **advice, code, direction, etc** *-Please message me directly letting me know your interest, every little bit helps* More details about the mission and progress, including screenshots and whiteboard outlines can be found on [the documentation page](http://xtremefaith.github.io/Salesforce-API-Connector/)
+Are you excited about this project?! I am and I believe it could benefit many people and organizations as it combines two extremely large platforms in a powerful way. I would really appreciate any help you are willing to contribute: **advice, code, direction, etc** *-Please message me directly letting me know your interest, every little bit helps*. More details about the mission and progress, including screenshots and whiteboard outlines can be found on [the documentation page](https://github.com/Xtremefaith/salesforce-api-connector)
 
 # Current To Do List
 
@@ -35,14 +35,6 @@ Are you excited about this project?! I am and I believe it could benefit many pe
 - Use access token to make an API call to Salesforce
 - Securely store credentials in WordPress database
 - Setup OAuth 2.0 as new process for getting `access_token`
-
-# Whiteboards
-
-Here's a few whiteboard illustrations that will help establish a visual on where we are at and where we are going.
-
-#### OAuth Process
-
-![Whiteboard: OAuth Process](https://raw.githubusercontent.com/Xtremefaith/Salesforce-API-Connector/master/documentation/whiteboards/oauth-process.jpg)
 
 # Contributors
 
