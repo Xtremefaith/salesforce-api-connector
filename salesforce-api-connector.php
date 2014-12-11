@@ -42,10 +42,10 @@ class Salesforce_API_Connector {
     static $plugin_dir_path;
     static $plugin_dir_url;
 
-    /* Saleforce Connect Apps (Sandbox) */
-    static $api_url = '3MVG9_7ddP9KqTzc2Xd5SeKdgzi9VH4TWvOcYNGRs5t5_rGQ149IkNsphdjhCUNWfBxerGt4PrXaZ3TOYqAUd';
-    static $consumer_key = '3MVG9_7ddP9KqTzc2Xd5SeKdgzi9VH4TWvOcYNGRs5t5_rGQ149IkNsphdjhCUNWfBxerGt4PrXaZ3TOYqAUd';
-    static $consumer_secret = '513404674969391196';
+    /* Saleforce Connect Apps (Developer) */
+    static $api_url = '';
+    static $consumer_key = '3MVG9fMtCkV6eLhd8wtSjm1nhzogTf2Yrl7avFh1M7vSaOgz6zhLSXRAt1wwasaYYrS2b0hENuXCJuklLZYxO';
+    static $consumer_secret = '5825798550377824904';
 
 	/**
 	 * sf_api_connector Constructor.
@@ -54,6 +54,13 @@ class Salesforce_API_Connector {
 	 * @return sf_api_connector
 	 */
 	public function __construct() {
+
+		// Include Salesforce PHP Toolkit
+		require_once ('assets/soapclient/SforcePartnerClient.php');
+
+		$mySforceConnection = new SforcePartnerClient();
+		$mySoapClient = $mySforceConnection->createConnection("partner.wsdl.xml");
+		$mylogin = $mySforceConnection->login("username@mail.com", "changeme");
 
 		self::$file = __FILE__;
         self::$plugin_dir_path = plugin_dir_path(__FILE__);
